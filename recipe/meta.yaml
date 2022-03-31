@@ -1,5 +1,5 @@
 {% set name = "dexp" %}
-{% set version = "2022.2.24.535" %}
+{% set version = "2022.3.29.873" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2417296e3be9bf40ee8b76e092340a17fd3c32c5d259081e08faeba70e8e531f
+  sha256: eacbad7e2b8d2dab08480cab0a6ab8f25f5a5faad676fc4d710b9b268525abeb
 
 build:
   entry_points:
