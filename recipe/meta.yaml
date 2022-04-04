@@ -51,6 +51,7 @@ requirements:
     - scipy
     - seaborn
     - tifffile
+    - tqdm
     - zarr
 
 test:
