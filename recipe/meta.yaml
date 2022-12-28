@@ -1,5 +1,5 @@
 {% set name = "dexp" %}
-{% set version = "2022.6.29.552" %}
+{% set version = "2022.12.22.907" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6bc5181c1cc23b439a89104c5561a867daf1b89e36a0ea01dd347e0c31e7af57
+  sha256: b3dfaa54c80b974a122b934b2d1b25b770911c58a728d06560d7692446d041d2
 
 build:
   entry_points:
@@ -28,13 +28,16 @@ requirements:
     - cairocffi
     - click >=8.0.0
     - colorcet
+    - cupy
     - dask-core >=21.6.0
     - dask-cuda >=21.6.0
     - dask-image
     - distributed
+    - fasteners
     - gpustat
     - gputil
     - gputools
+    - imageio
     - joblib
     - numba
     - numcodecs
@@ -51,6 +54,7 @@ requirements:
     - scipy
     - seaborn
     - tifffile
+    - toolz
     - tqdm
     - zarr
 
