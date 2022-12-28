@@ -28,13 +28,16 @@ requirements:
     - cairocffi
     - click >=8.0.0
     - colorcet
+    - cupy
     - dask-core >=21.6.0
     - dask-cuda >=21.6.0
     - dask-image
     - distributed
+    - fasteners
     - gpustat
     - gputil
     - gputools
+    - imageio
     - joblib
     - numba
     - numcodecs
@@ -51,6 +54,7 @@ requirements:
     - scipy
     - seaborn
     - tifffile
+    - toolz
     - tqdm
     - zarr
 
