@@ -1,11 +1,11 @@
-About dexp
-==========
+About dexp-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dexp-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/royerlab/dexp
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dexp-feedstock/blob/main/LICENSE.txt)
 
 Summary: Light-sheet Dataset EXploration and Processing
 
