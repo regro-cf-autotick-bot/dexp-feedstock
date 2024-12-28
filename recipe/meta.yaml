@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f026db0768d50c2e254959de01982fe36f62d3c362788fc9f1512595802c0a7e
 
 build:
@@ -16,12 +16,12 @@ build:
     - dexp-install=dexp.cli.install_main:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - arbol
     - cachey
@@ -47,7 +47,7 @@ requirements:
     - platformdirs
     - pyotf
     - pytest
-    - python >=3.7
+    - python >={{ python_min }}
     - python-blosc
     - pyyaml
     - scikit-image
@@ -70,6 +70,7 @@ test:
   requires:
     - oclgrind
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/royerlab/dexp
